@@ -1,10 +1,11 @@
 
 :root {
-    --main-text-color: 252B42;
-    --second-text-color:737373;
-    --light-text-color:FFFFFF;
-    --accent-color:FF7B47;
-    --dark-accent-color:0D5C63;
+    --main-text-color: #252B42;
+    --second-text-color:#737373;
+    --light-text-color:#FFFFFF;
+    --accent-color:#FF7B47;
+    --dark-accent-color:#0D5C63;
+    --hover-color: #2A7CC7;
 
 }
 
@@ -23,7 +24,7 @@ body {
     text-decoration: none;
 }
 
-/* Header */
+/* ------------------------------------------Header --------------------------------------------*/
 
 .logo {
     color: var(--main-text-color);
@@ -33,12 +34,32 @@ body {
     line-height: 1.33;
 }
 
-.site-nav-item {
-    
+.site-nav-link {
+    color: var(--second-text-color);
     font-weight: 600;
     line-height: 1.71;
 }
 
-.site-nav-link {
+.site-nav-link:hover,
+.site-nav-link:focus {
+    color: var(--hover-color);
+}
+
+
+
+/* ------------------------------------------Hero --------------------------------------------*/
+
+.hero-title {
+    color: var(--main-text-color);
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 1.38;
+}
+.hero-text {
     color: var(--second-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.hero-modal-btn {
 }
