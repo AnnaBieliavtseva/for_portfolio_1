@@ -16,6 +16,11 @@ body {
     line-height: 1.43;
 }
 
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .list {
     list-style: none;
 }
@@ -24,7 +29,31 @@ body {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+.container {
+    width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 /* ------------------------------------------Header --------------------------------------------*/
+
+.header-container {
+    display: flex;
+    align-items: center;
+    }
 
 .logo {
     color: var(--main-text-color);
@@ -34,10 +63,18 @@ body {
     line-height: 1.33;
 }
 
+.site-nav {
+    display: flex;
+}
+
+.site-nav-item {
+    margin-right: 21px;
+}
 .site-nav-link {
     color: var(--second-text-color);
     font-weight: 600;
     line-height: 1.71;
+    padding-top: 32px;
 }
 
 .site-nav-link:hover,
