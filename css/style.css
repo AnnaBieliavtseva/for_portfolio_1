@@ -14,11 +14,13 @@ body {
     font-size: 14px;
     letter-spacing: 0.2px;
     line-height: 1.43;
+    background-color: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6, ul, ol, p {
     margin-top: 0;
     margin-bottom: 0;
+    padding-inline-start: 0;
 }
 
 .list {
@@ -45,7 +47,13 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 .container {
     width: 1080px;
     padding: 0 15px;
-    margin: 0 auto;
+    margin-right:  auto;
+    margin-left: auto;
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 /* ------------------------------------------Header --------------------------------------------*/
@@ -61,6 +69,7 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
     font-weight: 700;
     letter-spacing: 0.1px;
     line-height: 1.33;
+    margin-right: 132px;
 }
 
 .site-nav {
@@ -70,11 +79,18 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 .site-nav-item {
     margin-right: 21px;
 }
+
+.site-nav-item:last-child {
+    margin-right: 0;
+}
+
 .site-nav-link {
+    display: block;
     color: var(--second-text-color);
     font-weight: 600;
     line-height: 1.71;
-    padding-top: 32px;
+    padding-top: 34px;
+    padding-bottom: 46px;
 }
 
 .site-nav-link:hover,
@@ -87,16 +103,66 @@ h1, h2, h3, h4, h5, h6, ul, ol, p {
 /* ------------------------------------------Hero --------------------------------------------*/
 
 .hero-title {
+    
     color: var(--main-text-color);
     font-weight: 800;
     font-size: 58px;
     line-height: 1.38;
+    max-width: 500px;
+ 
+    margin-bottom: 35px;
+    
 }
 .hero-text {
     color: var(--second-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
+    max-width: 376px;
+    margin-bottom: 35px;
 }
+
+.hero-buttons {
+    display: flex;
+}
+
 .hero-modal-btn {
+    display: block;
+    min-width: 187px;
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+    border: 1px solid transparent;
+    border-radius: 37px;
+    padding: 10px 36px;
+    font-weight: 500;
+    line-height: 2;
+    margin-right: 10px;
+}
+
+.hero-modal-btn:hover,
+.hero-modal-btn:focus {
+background-color: transparent;
+color: var(--dark-accent-color);
+border-color: var(--hover-color);
+}
+
+.hero-link {
+    display: inline-block;
+    min-width: 157px;
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+    border: 1px solid transparent;
+    border-radius: 37px;
+    padding: 10px 36px;
+    font-weight: 500;
+    line-height: 2;
+   
+}
+
+
+.hero-link:hover,
+.hero-link:focus {
+background-color: transparent;
+color: var(--dark-accent-color);
+border-color: var(--hover-color);
 }
